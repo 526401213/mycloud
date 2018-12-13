@@ -22,7 +22,7 @@ import java.util.Scanner;
 @EnableTurbine //开启Turbine集群监控；Turbine有一个重要的功能就是汇聚监控信息，并将汇聚到的监控信息提供给Hystrix Dashboard来集中展示和监控。Turbine汇聚的是hystrix.stream接口的数据，所以，如果是监控的当前项目自身，则还需要添加注解@EnableCircuitBreaker开启断路器，让hystrix.stream接口生效，否则turbine.stream接口不会有结果返回、同时监控仪表盘也不会显示监控内容。
 @SpringBootApplication
 public class ShopApplication {
-    public static void main(String[] args) {
+    public static void main(String[] args) { 
         System.out.println("================================================== 开始启动 消费者应用shop =============================================================");
         System.out.println("请在控制台指定shop应用的端口号 —— [端口号随意指定，注意不要与本机端口号出现冲突即可]");
 
